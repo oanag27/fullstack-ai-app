@@ -1,0 +1,7 @@
+.vs/
+.vscode/
+*.vspscc
+node_modules/
+.qodo
+appsettings.Development.json
+.env

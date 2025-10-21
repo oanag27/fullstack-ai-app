@@ -1,0 +1,470 @@
+[
+  {
+    "ContainingType": "project.Controllers.AuthController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/auth/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "forgotPasswordDto",
+        "Type": "project.Models.DTO.ForgotPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "project.Models.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.AuthController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/auth/refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "project.Models.DTO.RegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/auth/resetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetPasswordDto",
+        "Type": "project.Models.DTO.ResetPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.CitiesController",
+    "Method": "SearchCities",
+    "RelativePath": "api/Cities/cities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.DeleteRequestController",
+    "Method": "ApproveDelete",
+    "RelativePath": "api/DeleteRequest/approve-delete/{requestId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.DeleteRequestController",
+    "Method": "DenyDelete",
+    "RelativePath": "api/DeleteRequest/deny-delete/{requestId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.DeleteRequestController",
+    "Method": "GetAllDeleteRequests",
+    "RelativePath": "api/DeleteRequest/get-all-delete-requests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.DeleteRequestController",
+    "Method": "GetDeleteRequests",
+    "RelativePath": "api/DeleteRequest/get-delete-requests/{tripId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tripId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.DeleteRequestController",
+    "Method": "RequestDelete",
+    "RelativePath": "api/DeleteRequest/request-delete/{tripId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tripId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.GeminiAiController",
+    "Method": "Generate",
+    "RelativePath": "api/GeminiAi/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.ItineraryController",
+    "Method": "GenerateItinerary",
+    "RelativePath": "api/Itinerary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tripName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "itinerary",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.ItineraryController",
+    "Method": "GetItineraryByTripId",
+    "RelativePath": "api/Itinerary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itineraryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.OllamaController",
+    "Method": "Generate",
+    "RelativePath": "api/Ollama/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.EmailSendController",
+    "Method": "SendEmail",
+    "RelativePath": "api/send-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "project.Models.DTO.MessageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.EmailSendController",
+    "Method": "SendEmailWithAttachment",
+    "RelativePath": "api/send-email-attachment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "project.Models.DTO.MessageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.TripController",
+    "Method": "GetAllTrips",
+    "RelativePath": "api/Trip",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[project.Models.Trip, project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project.Controllers.TripController",
+    "Method": "AddTrip",
+    "RelativePath": "api/Trip",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tripDto",
+        "Type": "project.Models.DTO.TripDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project.Models.Trip",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project.Controllers.TripController",
+    "Method": "GetTripById",
+    "RelativePath": "api/Trip/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project.Models.Trip",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project.Controllers.TripController",
+    "Method": "UpdateTrip",
+    "RelativePath": "api/Trip/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "trip",
+        "Type": "project.Models.Trip",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.TripController",
+    "Method": "DeleteTrip",
+    "RelativePath": "api/Trip/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.TripController",
+    "Method": "GetTripByTripName",
+    "RelativePath": "api/Trip/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "project.Models.Trip",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "project.Controllers.TripController",
+    "Method": "GetAllTripsWithoutAuth",
+    "RelativePath": "api/Trip/get-all-trips",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.TripController",
+    "Method": "GetUserEmailByTripId",
+    "RelativePath": "api/Trip/get-user-email-by-trip-id/{tripId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tripId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.TripController",
+    "Method": "GetTripIdByName",
+    "RelativePath": "api/Trip/tripId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.UserController",
+    "Method": "GetUserNameByEmailAsync",
+    "RelativePath": "api/user/user/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "project.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/user/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

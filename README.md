@@ -1,6 +1,6 @@
 ✈️ Intelligent Travel Planner
-An AI-powered travel planning platform that transforms how users discover, plan and organize their journeys. Built with modern architecture and cutting-edge technologies, 
-this application delivers personalized itineraries, immersive visual experiences and role-based access control.
+
+An AI-powered travel planning platform that transforms how users discover, plan and organize their journeys. Built with modern architecture and cutting-edge technologies, this application delivers personalized itineraries, immersive visual experiences and role-based access control.
 
 Key Features
 

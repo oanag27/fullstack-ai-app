@@ -41,7 +41,15 @@ const Map: React.FC = () => {
     iconSize: [20, 20],
   });
   return (
-    <div style={{ width: "100%", height: "900px", backgroundColor: "black" }}>
+    <div
+      style={{
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        backgroundColor: "black",
+      }}
+    >
       <Navbar role="User" />
       <MapContainer
         center={[20, 0]}
@@ -60,7 +68,25 @@ const Map: React.FC = () => {
             icon={Icon}
           >
             <Popup>
-              {trip.tripName} - {trip.selectedDestination}
+              <div style={{ padding: "8px", width: "150px" }}>
+                <h3
+                  style={{
+                    marginBottom: "8px",
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {trip.tripName.toUpperCase()}
+                </h3>
+                <p
+                  style={{
+                    margin: "0",
+                    fontSize: "14px",
+                  }}
+                >
+                  📍 {trip.selectedDestination}
+                </p>
+              </div>
             </Popup>
           </Marker>
         ))}

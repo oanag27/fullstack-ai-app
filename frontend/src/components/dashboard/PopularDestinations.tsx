@@ -1,3 +1,4 @@
+import { UNSPLASH_ACCESS_KEY } from "config";
 import React, { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -28,7 +29,7 @@ const PopularDestinations: React.FC<DestinationImagesProps> = ({
 
     const fetchUnsplashImages = async (query: string) => {
       try {
-        const accessKey = "***REMOVED***";
+        const accessKey = UNSPLASH_ACCESS_KEY;
         const res = await fetch(
           `https://api.unsplash.com/search/photos?query=${encodeURIComponent(
             query
